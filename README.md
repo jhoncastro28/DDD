@@ -23,7 +23,7 @@ Este proyecto es un ejemplo de microservicios usando Spring Boot y Eureka para s
    docker-compose up -d
    ```
 
-   Esto iniciará MongoDB en el puerto 27017 y RabbitMQ en los puertos 5672 y 15672.
+   Esto iniciará MongoDB en el puerto 27017 y RabbitMQ con Management UI en los puertos 5672 y 15672.
 
 2. **Iniciar Eureka Server**:
 
@@ -52,7 +52,8 @@ Este proyecto es un ejemplo de microservicios usando Spring Boot y Eureka para s
 
 ## Endpoints del servicio de usuarios
 
-- GET /users: Lista todos los usuarios
+- GET /users: Mensaje de bienvenida
+- GET /users/listAll: Lista todos los usuarios
 - GET /users/{userId}: Obtiene un usuario por ID
 - POST /users/create: Crea un nuevo usuario
-
+- DELETE /users/{userId}: Elimina un usuario

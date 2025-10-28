@@ -21,11 +21,8 @@ spring:
     password: guest
   data:
     mongodb:
-      uri: mongodb://admin:password@localhost:27017/microservice?authSource=admin
+      uri: mongodb://localhost:27017/microservice
       database: microservice
-      authentication-database: admin
-      repositories:
-        type: auto
 
 message: Welcome to User Management Service
 
